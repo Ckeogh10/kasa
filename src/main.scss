@@ -1,0 +1,10 @@
+@import "./utils/style/colors.scss";
+@import "./utils/style/typography.scss";
+
+@import "./pages/Home/index.scss";
+@import "./pages/A-Propos/index.scss";
+@import "./pages/Fiche-Logement/index.scss";
+@import "./pages/Page-Erreur-404/index.scss";
+
+@import "./composants/Card/card.scss";
+@import "./composants/Header/header.scss";
