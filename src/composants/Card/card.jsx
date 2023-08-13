@@ -1,11 +1,11 @@
 function Card({ id, title, cover }) {
     return (
-        <div>
-            <li key={id} className="home-card">
-                <h2 className="home-card-title">{title}</h2>
-                <img className="home-card-cover" src={cover} alt={'cover'} />
-            </li>
-        </div>
+            <div key={id} className="home-card">
+                <div className="home-card__cover-container">
+                    <h2 className="home-card__title">{title}</h2>
+                    <img className="home-card__cover" src={cover} alt={'cover'} /> 
+                </div>
+            </div>
     )
 }
 

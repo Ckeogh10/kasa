@@ -1,83 +1,62 @@
 /* D_Home */
 
-body {
-    position: relative;
+.home {
     width: 1440px;
-    height: 1024px;
+    height: 100%;
+    margin: 0 auto;
 
     background: #FFFFFF;
 };
 
-/* _Body */
-
-main {
-    position: absolute;
-    width: 1240px;
-    height: 1095px;
-    left: 100px;
-    top: 171px;
-
+.main {
+    height: 100%;
 }
 
 /* Gallery */
 
-home-card-item {
-    position: absolute;
-    width: 1240px;
-    height: 829px;
-    left: 100px;
-    top: 397px;
-}
-
-
-
-/* Background */
-
-home-card-background {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: #F7F7F7;
-    border-radius: 25px;
-}
-
-/* _Section 1 */
-
-home-banner {
+.home-gallery {
     display: flex;
-    position: absolute;
-    width: 1240px;
-    height: 223px;
-    left: 100px;
-    top: 131px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    background: url(../../assets/banner/home-banner.png);
-    border-radius: 25px;
-    mix-blend-mode: darken;
-    opacity: 0.3;
+    background-color: #F6F6F6;
 }
 
+.banner {
 
-/* Chez vous, partout et ailleurs */
-
-home-banner-text {
-    position: absolute;
-    left: 25.9%;
-    right: 25.14%;
-    top: 20.41%;
-    bottom: 72.95%;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 142.6%;
-    /* or 68px */
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
 
-    color: #FFFFFF;
+    .banner__container {
+
+        width: 1240px;
+        height: 244px;
+        position: relative;
+    }
+
+    .banner__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+
+        ::before {
+            content: "";
+            filter: brightness(50%);
+        }
+
+    }
+
+    .banner__text {
+        position: absolute;
+        color: #FFFFFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+ }
 }
+ 
