@@ -1,13 +1,14 @@
 import { annonces } from "../../data/annonces";
 
 import Banner from "../../assets/banner/Banner.png"
-import Header from "../../composants/Header/header";
 import Card from "../../composants/Card/card";
+import Header from "../../composants/Header/header";
 
 function Home() {
   return (
     <div className="home">
-        <Header />
+
+      <Header />
 
       <main className="main">
 
@@ -19,19 +20,19 @@ function Home() {
         </section>
 
         <article className="home-gallery">
-            
-              {annonces.map(({ id, title, cover}) => (
-                <Card
-                id={id}
-                title={title}
-                cover={cover}
-                />
-              ))}
-            
+          
+          {annonces.map(({ id, title, cover}) => (
+            <Card
+            id={id}
+            title={title}
+            cover={cover}
+            />
+          ))}
+
         </article>
 
       </main>
-      
+
     </div>
   );
 }
