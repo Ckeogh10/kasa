@@ -9,6 +9,7 @@ import FicheLogement from './pages/Fiche-Logement/index';
 import Error404 from './pages/Page-Erreur-404/index';
 
 import Footer from "./composants/Footer/footer";
+import Header from "./composants/Header/header";
 
 import "./main.scss"
 
@@ -18,14 +19,16 @@ root.render(
   <React.StrictMode>
   
   <Router>
+    <Header />
     <Routes>
       <Route path='/' element={<Home />} ></Route>
       <Route path='/A-Propos' element={<APropos />} ></Route>
       <Route path='/:id' element={<FicheLogement />} ></Route>
       <Route path='*' element={<Error404 />} ></Route>
     </Routes>
+    <Footer />
   </Router>
-  <Footer />
+  
   </React.StrictMode>
   
   

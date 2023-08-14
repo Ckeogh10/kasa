@@ -5,18 +5,27 @@
     width: 28%;
     height: 340px;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
 
     .home-card__container {
         height: 100%;
         position: relative;
+        
     }
 
     .home-card__cover {
 
     height: 100%;
     width: 100%;
-    object-fit: cover;
     border-radius: 10px;
+    background: $color-primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    // See card.jsx for the background-image
+
     }
 
     .home-card__title {
@@ -30,6 +39,7 @@
     display: flex;
     align-items: flex-end;
     bottom: 8px;
+    top: 0px;
     left: 16px;
 
     color: #FFFFFF;

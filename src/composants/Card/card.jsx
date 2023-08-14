@@ -2,12 +2,17 @@ import { Link } from "react-router-dom"
 
 function Card({ id, title, cover }) {
     return (
-        <Link to={`/:${id}`} className="home-card">
-            <div key={id} className="home-card__container">
-                <h2 className="home-card__title">{title}</h2>
-                <img className="home-card__cover" src={cover} alt={'cover'} /> 
-            </div>
-        </Link>    
+        <div className="home-card hover-effect">
+            <Link to={`/:${id}`} key={id} className="home-card__container">
+                <div className="home-card__cover" style={{ 
+                    backgroundImage: `linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.7)), url("${cover}")`
+                  }}>
+                  </div>
+                <h2 className="home-card__title">{title}</h2>  
+            </Link>
+        </div>
+
+                
     )
 }
 
