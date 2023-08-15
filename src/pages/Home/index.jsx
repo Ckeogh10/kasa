@@ -1,19 +1,20 @@
-import { annonces } from "../../data/annonces";
+import { annonces } from "data/annonces";
 
-import Card from "../../composants/Card/card";
+import Card from "composants/Card/card";
+import Banner from "composants/Banner/banner";
+
+import BannerHome from "assets/banner/BannerHome.png"
 
 function Home() {
   return (
-    <div className="home">
+    <div className="main-wrapper">
 
       <main className="main">
 
-        <section className="banner">
-          <div className="banner__container">
-            <div className="banner__text">Chez vous, partout et ailleurs</div>
-            
-          </div>
-        </section>
+      <Banner 
+        text="Chez vous, partout et ailleurs"
+        image={BannerHome}
+        />
 
         <article className="home-gallery">
           

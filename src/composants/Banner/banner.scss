@@ -1,0 +1,28 @@
+.banner {
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .banner__container {
+
+        height: 244px;
+        position: relative;
+    }
+
+    .banner__text {
+        position: absolute;
+        color: #FFFFFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+ }
+
+    .banner__img {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+    }
+}
