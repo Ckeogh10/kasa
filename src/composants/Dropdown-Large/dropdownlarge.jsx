@@ -1,4 +1,5 @@
 import arrowdown from "../../assets/composants/Dropdown/arrow-down.png"
+import arrowup from "../../assets/composants/Dropdown/arrow-up.png"
 
 import { useState } from 'react'
 
@@ -24,7 +25,7 @@ function DropdownLargeOpen({ title, text }) {
                     <div className="dropdown-large__container">
                         <h1 className="dropdown-large__title">{title}</h1>
                         <div>
-                            <img className="dropdown-large__arrow-down" src={arrowdown} alt="Downwards arrow" /> 
+                            <img className="dropdown-large__arrow-down" src={arrowup} alt="Upwards arrow" /> 
                         </div>
                     </div>    
                 </button>

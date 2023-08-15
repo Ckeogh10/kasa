@@ -6,6 +6,7 @@
     .banner__container {
 
         height: 244px;
+        width: 100%;
         position: relative;
     }
 
@@ -20,9 +21,9 @@
 
     .banner__img {
         height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 100%;
+        object-fit: cover;
         border-radius: 15px;
+        filter:brightness(75%);
     }
 }

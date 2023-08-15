@@ -6,6 +6,7 @@
         align-items: center;
         justify-content: center;
         padding: 15px;
+        
 
         .dropdown-large__button {
             background-color: $color-primary;
@@ -15,6 +16,7 @@
             border-radius: 10px;
             displaY: flex;
             flex-direction: column;   
+            
         }
     
     
@@ -38,12 +40,12 @@
         }
 
         .dropdown-large__background {
-            height: 60px;
+            height: 100%;
             width: 80%;
             color: $color-primary;
             background-color: $color-background;  
             padding-bottom: 20px;
-            padding-top: 10px;
+            padding-top: 20px;
         }
 
         .dropdown-large__text {
