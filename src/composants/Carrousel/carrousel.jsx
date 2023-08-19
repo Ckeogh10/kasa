@@ -16,21 +16,23 @@ function Carrousel(  {image} ) {
         <div className="carrousel">
 
             <div className="carrousel__container">
-
                 <img className="carrousel__image" src={image[x]} alt="Logement" />
-
+                
+                {image.length !==1 && 
                 <div className="carrousel__arrow">
                 <button className="carrousel__button" button onClick={() => setx(x-1)}>
-                    <img className="carrousel__arrow-backward" src={arrow_back} alt="Backwards arrow" />
+                    <img src={arrow_back} alt="Backwards arrow" />
                 </button>
                 <button className="carrousel__button" button onClick={() => setx(x+1)}>
-                    <img className="carrousel__arrow-forward" src={arrow_forward} alt="Forwards arrow" />
+                    <img src={arrow_forward} alt="Forwards arrow" />
                 </button>
                 </div>
-
+                }
+                
                 <div className="carrousel__text">
                     {x+1}/{image.length}
                 </div>
+                
             </div>
             
         </div> 

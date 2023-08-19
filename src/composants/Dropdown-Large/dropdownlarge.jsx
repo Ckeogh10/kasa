@@ -3,7 +3,7 @@ import arrowup from "../../assets/composants/Dropdown/arrow-up.png"
 
 import { useState } from 'react'
 
-function DropdownLargeOpen({ title, text }) {
+function DropdownLarge({ title, text }) {
 
     const [isOpen, setIsOpen] = useState(true)
 
@@ -40,4 +40,4 @@ function DropdownLargeOpen({ title, text }) {
     )
 }
 
-export default DropdownLargeOpen
+export default DropdownLarge
