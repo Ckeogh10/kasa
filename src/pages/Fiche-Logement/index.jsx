@@ -25,9 +25,7 @@ function FicheLogement() {
 
             <article className="content">
 
-                <Carrousel
-                    image={logement.pictures}
-                />
+                <Carrousel image={logement.pictures} />
 
                 <div className="information">
 
@@ -44,11 +42,11 @@ function FicheLogement() {
 
                         <div className="information__text-host">
 
-                                <div className="information__text-host__name">
-                                    {logement.host.name}
-                                </div>
+                            <div className="information__text-host__name">
+                                {logement.host.name}
+                            </div>
 
-                                <img src={logement.host.picture} alt="The host" className="information__text-host__img"/>
+                            <img src={logement.host.picture} alt="The host" className="information__text-host__img"/>
                                                 
                         </div>  
 
@@ -74,6 +72,7 @@ function FicheLogement() {
                     title={"Équipements"}
                     text={equipments}
                     />
+                    
                 </div>
                     
             </article>

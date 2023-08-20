@@ -11,10 +11,10 @@ function Home() {
 
       <main className="main">
 
-      <Banner 
-        text="Chez vous, partout et ailleurs"
-        image={BannerHome}
-      />
+        <Banner 
+          text="Chez vous, partout et ailleurs"
+          image={BannerHome}
+        />
 
         <article className="home-gallery">
           

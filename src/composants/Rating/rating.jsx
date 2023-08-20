@@ -13,8 +13,8 @@ function Rating( { stars } ) {
 
     return (
         <div className="information__right-rating">
-            {activeStars.fill(0).map(({e, i}) => <img src={activestar} alt="full rating star"/>) }
-            {inactiveStars.fill(0).map(({e, i}) => <img src={inactivestar} alt="empty rating star"/>) }  
+            {activeStars.fill(0).map(() => <img src={activestar} alt="full rating star"/>) }
+            {inactiveStars.fill(0).map(() => <img src={inactivestar} alt="empty rating star"/>) }  
         </div>
     )
 }
