@@ -7,57 +7,107 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .information {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     width: 1240px;
+    
 
-    .information__left {
+    .information__text {
 
-        .information__left-title {
-            color: $color-primary;
-            font-size: 38px;
-            font-weight: medium;
-        }
-
-        .information__left-location {
-            color: $color-primary;
-            font-size: 18px;
-            font-weight: medium;
-        }
-    }
-
-    .information__right {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
-        .information__right-host {
+
+        .information__text-location {
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .information__text-title {
+            color: $color-primary;
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+            
+            }
+
+            .information__text-address {
+                color: $color-primary;
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+        
+
+        .information__text-host {
             display: flex;
             align-items: center;
-            gap: 10px;
 
-            .information__right-host__name {
+            .information__text-host__name {
                 font-size: 18px;
                 color: $color-primary;
                 font-weight: medium;
+                width: 100px;
             }
 
-            .information__right-host__img {
+            .information__text-host__img {
                 object-fit:  cover;
                 border-radius: 50%;
+                height: 64px;
+                width: 64px;
             }
         }
     }
+
+    .information__icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.details {
+.logement-dropdown {
 
-    width: 100%;
+    width: 1240px;
+    display: flex;
+    gap: 50px;
+    padding-top: 10px;
 
-    .details__dropdown {
-        display: flex;
+    .dropdown-large {
+
+    padding: 0;
+    align-items: 0;
+    justify-content: 0;
+
+        .details__dropdown-equipment {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            list-style: none;   
+        }
+
+        .dropdown-large__button {
+            width: 100%;
+        }
+
+        .dropdown-large__text {
+            font-size: 18px;
+        }
+
+        .dropdown-large__background {
+            width: 100%;   
+        }   
     }
+
 }

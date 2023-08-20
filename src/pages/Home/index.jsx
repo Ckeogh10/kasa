@@ -14,12 +14,13 @@ function Home() {
       <Banner 
         text="Chez vous, partout et ailleurs"
         image={BannerHome}
-        />
+      />
 
         <article className="home-gallery">
           
           {annonces.map(({ id, title, cover}) => (
             <Card
+            key={id}
             id={id}
             title={title}
             cover={cover}
