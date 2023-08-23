@@ -1,22 +1,24 @@
-/* D_Home */
-
 .home {
     width: 1440px;
     height: 100%;
     margin: 0 auto;
     padding-bottom: 40px;
-
     background: #FFFFFF;
 };
-
-/* Gallery */
 
 .home-gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-    //background-color: $color-background;
 }
- 
+
+@media (max-width: 768px) {
+    .home {
+        width: $width-phone;
+    }
+
+    .home-gallery {
+        flex-direction: column;
+    }
+}

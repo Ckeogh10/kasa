@@ -60,3 +60,25 @@
             line-height: 142.6%;
         }
     }
+
+    @media (max-width: $width-phone) {
+        .dropdown-large {
+            .dropdown-large__button {
+                height: 30px;
+                width: 95%;
+            }
+            
+            .dropdown-large__background {
+                width: 95%;
+                padding-top: 10px;
+            }
+
+            .dropdown-large__title {
+                font-size: 13px;
+            }
+
+            .dropdown-large__text {
+                font-size: 12px;
+            }
+        }
+    }

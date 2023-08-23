@@ -27,3 +27,28 @@
         filter:brightness(75%);
     }
 }
+
+@media (max-width: $width-phone) {
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .banner__container {
+            height: 111px;
+            width: 95%;
+        }
+        .banner__container-big {
+            height: 200px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .banner__text {
+            font-size: 24px;
+            left: 40%;
+            width: 70%
+        }
+    }
+}

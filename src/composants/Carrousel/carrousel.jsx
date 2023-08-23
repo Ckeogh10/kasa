@@ -21,10 +21,10 @@ function Carrousel(  {image} ) {
                 {image.length !==1 && 
                 <div className="carrousel__arrow">
                 <button className="carrousel__button" button onClick={() => setx(x-1)}>
-                    <img src={arrow_back} alt="Backwards arrow" />
+                    <img src={arrow_back} alt="Backwards arrow" className="carrousel__button-img" />
                 </button>
                 <button className="carrousel__button" button onClick={() => setx(x+1)}>
-                    <img src={arrow_forward} alt="Forwards arrow" />
+                    <img src={arrow_forward} alt="Forwards arrow" className="carrousel__button-img" />
                 </button>
                 </div>
                 }

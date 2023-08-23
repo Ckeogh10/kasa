@@ -1,4 +1,19 @@
-.information__right-rating {
+.information__personal-rating {
     display: flex;
     gap: 5px;
+    padding-bottom: 18px;
+    align-items: center;
+}
+
+@media (max-width: $width-phone) {
+
+    .information__personal-rating {
+        align-items: center;
+        padding-bottom: 0;
+
+        .information__personal-rating-star {
+            height: 25px;
+        }
+    }
+
 }

@@ -13,24 +13,23 @@
 .information {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     width: 1240px;
     
 
-    .information__text {
+    .information__location {
 
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        width: 75%;
 
 
-        .information__text-location {
+        .information__location-text {
 
             display: flex;
             flex-direction: column;
             width: 100%;
 
-            .information__text-title {
+            .information__location-title {
             color: $color-primary;
             font-size: 36px;
             font-weight: 500;
@@ -38,7 +37,7 @@
             
             }
 
-            .information__text-address {
+            .information__location-address {
                 color: $color-primary;
                 font-size: 18px;
                 font-weight: 500;
@@ -47,30 +46,33 @@
         }
         
 
-        .information__text-host {
+        
+    }
+
+    .information__personal {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        justify-content: space-between;
+
+        .information__personal-host {
             display: flex;
             align-items: center;
+            gap: 10px;
 
-            .information__text-host__name {
+            .information__personal-host__name {
                 font-size: 18px;
                 color: $color-primary;
                 font-weight: 400;
             }
 
-            .information__text-host__img {
+            .information__personal-host__img {
                 object-fit:  cover;
                 border-radius: 50%;
                 height: 64px;
                 width: 64px;
             }
         }
-    }
-
-    .information__icons {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: space-between;
     }
 }
 
@@ -109,4 +111,54 @@
         }   
     }
 
+}
+
+@media (max-width: $width-phone) {
+    .information {
+        width: 95%;
+        flex-direction: column;
+
+        .information__location {
+
+            width: 100%;
+
+            .information__location-title {
+                font-size: 18px;
+            }
+
+            .information__location-address {
+                font-size: 14px;
+            }
+        }
+
+        .information__personal {
+            flex-direction: row-reverse;
+            padding-bottom: 10px;
+
+            .information__personal-host {
+
+                .information__personal-host__name {
+                    font-size: 15px;
+                } 
+            }
+
+            
+        }
+    }
+
+    .logement-dropdown {
+        width: 95%;
+        flex-direction: column;
+
+        .dropdown-large {
+
+            .dropdown-large__text {
+                font-size: 12px;
+            }
+
+            .dropdown-large__button {
+                font-size: 13px;
+            }
+        }
+    }
 }

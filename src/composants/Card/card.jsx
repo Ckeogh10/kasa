@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 function Card({ id, title, cover }) {
+
     return (
             <Link to={`/annonces/${id}`} className="home-card hover-effect">
                 <div className="home-card__container">
@@ -10,5 +11,6 @@ function Card({ id, title, cover }) {
             </Link>
     )
 }
+
 
 export default Card

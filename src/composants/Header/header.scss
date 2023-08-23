@@ -17,10 +17,10 @@ header {
 nav {
     display: flex;
     gap: 50px;
+    font-size: 24px;
 
     .nav__link {
     font-weight: 500;
-    font-size: 24px;
     text-decoration-line: none;
     color: #FF6060;
     }
@@ -28,10 +28,34 @@ nav {
     .nav__link-active {
     text-decoration: underline 3px;
     font-weight: 500;
-    font-size: 24px;
     color: #FF6060;
     }
 }
 
+@media (max-width: $width-phone) {
+    header {
+        width: 95%;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
 
+    .logo {
+        .logo__img {
+            height: 50px;
+        }
+    }
+
+    nav {
+        gap: 20px;
+        font-size: 12px;
+
+        .nav__link {
+            text-transform: capitalize;
+        }
+
+        .nav__link-active {
+            text-decoration: none;
+        }
+    }
+}
 

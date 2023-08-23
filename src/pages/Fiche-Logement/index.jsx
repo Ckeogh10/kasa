@@ -29,36 +29,36 @@ function FicheLogement() {
 
                 <div className="information">
 
-                    <div className="information__text">
+                    <div className="information__location">
                         
-                        <div className="information__text-location">
-                            <h2 className="information__text-title">
+                        <div className="information__location-text">
+                            <h2 className="information__location-title">
                                 {logement.title}
                             </h2>
-                            <p className="information__text-address">
+                            <p className="information__location-address">
                                 {logement.location}
                             </p>  
                         </div>
 
-                        <div className="information__text-host">
-
-                            <div className="information__text-host__name">
-                                {logement.host.name}
-                            </div>
-
-                            <img src={logement.host.picture} alt="The host" className="information__text-host__img"/>
-                                                
-                        </div>  
-
-                    </div>
-
-                    <div className="information__icons">
-
                         <Tags tags={logement.tags}/>
 
-                        <Rating stars={logement.rating} />
-
                     </div>
+
+                    <div className="information__personal">
+                        
+                        <div className="information__personal-host">
+
+                                <div className="information__personal-host__name">
+                                    {logement.host.name}
+                                </div>
+
+                                <img src={logement.host.picture} alt="The host" className="information__personal-host__img"/>
+                                                    
+                            </div> 
+
+                            <Rating stars={logement.rating} />
+
+                        </div>
 
                 </div>
 
@@ -72,7 +72,7 @@ function FicheLogement() {
                     title={"Équipements"}
                     text={equipments}
                     />
-                    
+
                 </div>
                     
             </article>

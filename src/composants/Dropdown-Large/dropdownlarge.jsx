@@ -34,7 +34,6 @@ function DropdownLarge({ title, text }) {
                         {text}
                     </div>
                 </div>
-                
             </div>
         
     )

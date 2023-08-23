@@ -18,6 +18,7 @@
         font-size: 36px;
         font-weight: 500;
         margin-bottom: 90px;
+        text-align: center;
     }
 
     .error__link {
@@ -26,5 +27,23 @@
         text-decoration-line: underline;
         
         color: inherit;
+    }
+}
+
+@media (max-width: $width-phone) {
+    .error {
+
+        .error__number {
+            font-size: 96px;
+        }
+
+        .error__text {
+            font-size: 18px;
+        }
+
+        .error__link {
+            font-size: 14px;
+        }
+        
     }
 }

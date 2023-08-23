@@ -1,15 +1,25 @@
-.footer {
+footer {
     width: 100%;
-    height: 209px;
+    height: 208px;
+    margin-bottom: 0;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 
     .footer__text {
         font-size: 24px;
         color: #FFFFFF;
         padding-top: 30px;
+    }
+}
+
+@media (max-width: $width-phone) {
+    footer {
+        .footer__text {
+            font-size: 12px;
+        }
     }
 }
