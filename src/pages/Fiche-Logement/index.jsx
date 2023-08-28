@@ -1,16 +1,26 @@
 import  { annonces } from "../../data/annonces"
 
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 
 import Carrousel from "composants/Carrousel/carrousel";
 import DropdownLarge from "composants/Dropdown-Large/dropdownlarge";
 import Tags from "composants/Tags/tags";
 import Rating from "composants/Rating/rating";
+import { useEffect } from "react";
 
 function FicheLogement() {
 
-    const { id } = useParams()
+    const { id } = useParams();
+    const navigate = useNavigate();
     let logement = annonces.find((logement) => logement.id === id)
+
+    useEffect(() => {
+        if (logement === undefined) {
+        navigate('/')
+    }
+    })
+    
+    
 
     const equipments = <ul className ="details__dropdown-equipment">
                             {logement.equipments.map((tag) => {
@@ -21,7 +31,7 @@ function FicheLogement() {
                         </ul> 
 
     return ( 
-        <div className="main-wrapper">
+           <div className="main-wrapper">
 
             <article className="content">
 
@@ -32,10 +42,10 @@ function FicheLogement() {
                     <div className="information__location">
                         
                         <div className="information__location-text">
-                            <h2 className="information__location-title">
+                            <h2 className="information__location-text-title">
                                 {logement.title}
                             </h2>
-                            <p className="information__location-address">
+                            <p className="information__location-text-address">
                                 {logement.location}
                             </p>  
                         </div>
@@ -56,11 +66,11 @@ function FicheLogement() {
                                                     
                             </div> 
 
-                            <Rating stars={logement.rating} />
+                            <Rating rating={logement.rating} />
 
                         </div>
 
-                </div>
+                    </div>
 
                 <div className="logement-dropdown">
                         
@@ -77,7 +87,7 @@ function FicheLogement() {
                     
             </article>
             
-        </div>
+        </div> 
     )
 }
 
