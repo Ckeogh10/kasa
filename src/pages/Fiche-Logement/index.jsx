@@ -1,28 +1,23 @@
 import  { annonces } from "../../data/annonces"
 
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams } from "react-router-dom";
+
+import Error404 from "pages/Page-Erreur-404";
 
 import Carrousel from "composants/Carrousel/carrousel";
 import DropdownLarge from "composants/Dropdown-Large/dropdownlarge";
 import Tags from "composants/Tags/tags";
 import Rating from "composants/Rating/rating";
-import { useEffect } from "react";
 
 function FicheLogement() {
 
     const { id } = useParams();
-    const navigate = useNavigate();
-    let logement = annonces.find((logement) => logement.id === id)
 
-    useEffect(() => {
-        if (logement === undefined) {
-        navigate('/')
-    }
-    })
-    
-    
+    const logement = annonces.find((data) => data.id === id)
 
-    const equipments = <ul className ="details__dropdown-equipment">
+    if (logement !== undefined) {
+
+        const equipments = <ul className ="details__dropdown-equipment">
                             {logement.equipments.map((tag) => {
                                 return (
                                     <li key={tag}>{tag}</li>   
@@ -30,7 +25,7 @@ function FicheLogement() {
                             })}
                         </ul> 
 
-    return ( 
+        return  ( 
            <div className="main-wrapper">
 
             <article className="content">
@@ -88,7 +83,8 @@ function FicheLogement() {
             </article>
             
         </div> 
-    )
+        )
+    } else { return <Error404 />}
 }
 
 export default FicheLogement
