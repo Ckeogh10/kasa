@@ -18,7 +18,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 40px;
+        font-size: $fontsize-banner;
  }
 
     .banner__img {
@@ -33,7 +33,6 @@
 @media (max-width: $width-phone) {
     .banner {
         display: flex;
-        align-items: center;
         justify-content: center;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -48,7 +47,7 @@
             padding-bottom: 20px;
         }
         .banner__text {
-            font-size: 24px;
+            font-size: $fontsize-large;
             left: 40%;
             width: 70%
         }

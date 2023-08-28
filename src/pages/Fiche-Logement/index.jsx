@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Error404 from "pages/Page-Erreur-404";
 
 import Carrousel from "composants/Carrousel/carrousel";
-import DropdownLarge from "composants/Dropdown-Large/dropdownlarge";
+import Dropdown from "composants/Dropdown/dropdown";
 import Tags from "composants/Tags/tags";
 import Rating from "composants/Rating/rating";
 
@@ -69,11 +69,11 @@ function FicheLogement() {
 
                 <div className="logement-dropdown">
                         
-                    <DropdownLarge 
+                    <Dropdown
                     title={"Description"}
                     text={logement.description}
                     />
-                    <DropdownLarge 
+                    <Dropdown
                     title={"Équipements"}
                     text={equipments}
                     />
@@ -84,7 +84,7 @@ function FicheLogement() {
             
             </div> 
         )
-        
+
     } else { return <Error404 />}
 }
 

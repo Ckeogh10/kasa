@@ -1,7 +1,6 @@
 .carrousel {
         display: flex;
         justify-content: center;
-        align-items: center;
         padding-top: 30px;
         padding-bottom: 30px;
         width: 100%;
@@ -36,7 +35,7 @@
         position: absolute;
         bottom: 0;
         padding-bottom: 20px;
-        font-size: 18px;
+        font-size: $fontsize-medium;
         font-weight: 400;
         color: #FFFFFF
     }

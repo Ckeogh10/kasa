@@ -39,7 +39,7 @@
 
             .information__location-text-address {
                 color: $color-primary;
-                font-size: 18px;
+                font-size: $fontsize-medium;
                 font-weight: 500;
                 margin: 0;
             }
@@ -61,7 +61,7 @@
             gap: 10px;
 
             .information__personal-host__name {
-                font-size: 18px;
+                font-size: $fontsize-medium;
                 color: $color-primary;
                 font-weight: 400;
             }
@@ -83,7 +83,7 @@
     gap: 50px;
     padding-top: 10px;
 
-    .dropdown-large {
+    .dropdown {
 
     padding: 0;
     align-items: 0;
@@ -98,15 +98,15 @@
             list-style: none;   
         }
 
-        .dropdown-large__button {
+        .dropdown__button {
             width: 100%;
         }
 
-        .dropdown-large__text {
-            font-size: 18px;
+        .dropdown__text {
+            font-size: $fontsize-medium;
         }
 
-        .dropdown-large__background {
+        .dropdown__background {
             width: 100%;   
         }   
     }
@@ -125,7 +125,7 @@
             .information__location-text {
 
                .information__location-title {
-                font-size: 18px;
+                font-size: $fontsize-medium;
             }
 
                 .information__location-address {
@@ -154,13 +154,13 @@
         width: 95%;
         flex-direction: column;
 
-        .dropdown-large {
+        .dropdown {
 
-            .dropdown-large__text {
-                font-size: 12px;
+            .dropdown__text {
+                font-size: $fontsize-mobile;
             }
 
-            .dropdown-large__button {
+            .dropdown__button {
                 font-size: 13px;
             }
         }
