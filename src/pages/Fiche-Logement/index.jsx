@@ -18,15 +18,15 @@ function FicheLogement() {
     if (logement !== undefined) {
 
         const equipments = <ul className ="details__dropdown-equipment">
-                            {logement.equipments.map((tag) => {
-                                return (
-                                    <li key={tag}>{tag}</li>   
-                                )
-                            })}
-                        </ul> 
+                                {logement.equipments.map((tag) => {
+                                    return (
+                                        <li key={tag}>{tag}</li>   
+                                    )
+                                })}
+                            </ul> 
 
         return  ( 
-           <div className="main-wrapper">
+            <div className="main-wrapper">
 
             <article className="content">
 
@@ -82,8 +82,9 @@ function FicheLogement() {
                     
             </article>
             
-        </div> 
+            </div> 
         )
+        
     } else { return <Error404 />}
 }
 

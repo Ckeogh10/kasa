@@ -14,12 +14,12 @@ function Header() {
     return (
         <header>
             <div className="logo">
-                <NavLink to="/"><img className="logo__img" src={logo} alt="Kasa logo" /></NavLink>
+                <NavLink to="/"><img className="logo__img" src={logo} alt="Kasa logo"/></NavLink>
             </div>
             
             <nav className="nav">
-                <NavLink to="/" className={splitLocation[1] === "" ? "nav__link-active" : "nav__link" }>Accueil</NavLink>
-                <NavLink to="/A-Propos" className={splitLocation[1] === "A-Propos" ? "nav__link-active" : "nav__link" }>A Propos</NavLink>
+                <NavLink to="/" className={splitLocation[1] === "" ? "nav__link nav__link-active" : "nav__link" }>Accueil</NavLink>
+                <NavLink to="/A-Propos" className={splitLocation[1] === "A-Propos" ? "nav__link nav__link-active" : "nav__link" }>A Propos</NavLink>
             </nav>
         </header>
     )
