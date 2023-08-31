@@ -20,10 +20,10 @@ function Home() {
           
           {annonces.map(({ id, title, cover}) => (
             <Card
-            key={id}
-            id={id}
-            title={title}
-            cover={cover}
+              key={id}
+              id={id}
+              title={title}
+              cover={cover}
             />
           ))}
 

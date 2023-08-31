@@ -8,7 +8,6 @@ function Error404() {
                 <div className="error__text">Oups! La page que vous demandez n'existe pas.</div>
                 <Link to={`/`} className="error__link">Retourner sur la page d'accueil</Link>
             </div>
-            
         </div>
     )
 }

@@ -6,7 +6,6 @@ function Rating( { rating } ) {
     const stars = [1, 2, 3, 4, 5];
 
     return (
-
         <div className="information__personal-rating">
             {stars.map((star) => rating >= star ? (
                 <img src={activestar} key={star.toString()} alt="full rating star" className="information__personal-rating-star"/>
